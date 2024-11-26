@@ -13,12 +13,4 @@
         </dependency>
     </dependencies>
 
-
-    <parent>
-        <groupId>innopolis</groupId>
-        <artifactId>lessons</artifactId>
-        <version>1.0-SNAPSHOT</version>
-    </parent>
-
-
 </project>
