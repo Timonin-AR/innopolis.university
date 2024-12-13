@@ -1,16 +1,18 @@
-package innopolis.models;
+package innopolis.entity;
 
 import lombok.*;
 
-import java.time.LocalDate;
+import java.sql.Timestamp;
+
 
 @Getter
 @Setter
+@Builder
 @ToString
 @NoArgsConstructor
 @AllArgsConstructor
 public class Client {
     private Integer id, phoneNumber;
     private String firsName, midlName, lastName;
-    private LocalDate dateOfBirth;
+    private Timestamp dateOfBirth;
 }

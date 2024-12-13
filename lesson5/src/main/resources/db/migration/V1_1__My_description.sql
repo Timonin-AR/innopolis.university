@@ -36,4 +36,4 @@ VALUES (5000, 1, 1),
 
 ALTER TABLE cars ADD CONSTRAINT fk_cars_client FOREIGN KEY (client_id) REFERENCES clients(id);
 ALTER TABLE orders ADD CONSTRAINT fk_orders_car FOREIGN KEY (car_id) REFERENCES cars(id);
-ALTER TABLE orders ADD CONSTRAINT fk_orders_client FORE 561234IGN KEY (client_id) REFERENCES clients(id);
+ALTER TABLE orders ADD CONSTRAINT fk_orders_client FOREIGN KEY (client_id) REFERENCES clients(id);

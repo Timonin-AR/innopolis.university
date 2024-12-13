@@ -1,9 +1,10 @@
-package innopolis.models;
+package innopolis.entity;
 
 import lombok.*;
 
 @Getter
 @Setter
+@Builder
 @ToString
 @NoArgsConstructor
 @AllArgsConstructor
