@@ -1,0 +1,16 @@
+services:
+  db:
+    image: bitnami/postgresql
+    env_file: local.env
+    ports:
+      - "5432:5432"
+  app:
+    build: .
+    container_name: myapp
+    env_file: local.env
+    ports:
+      - "9999:9999"
+    depends_on:
+      - db
+
+
