@@ -12,7 +12,10 @@ import java.sql.Timestamp;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Client {
-    private Integer id, phoneNumber;
-    private String firsName, midlName, lastName;
+    private Integer id;
+    private Integer phoneNumber;
+    private String firsName;
+    private String midlName;
+    private String lastName;
     private Timestamp dateOfBirth;
 }
