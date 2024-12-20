@@ -1,15 +1,17 @@
 package innopolis.repository.impl;
 
-import innopolis.db.DatabaseService;
 import innopolis.entity.Client;
 import innopolis.mappers.ClientMapper;
 import innopolis.repository.ClientRepository;
+import org.springframework.jdbc.core.JdbcTemplate;
 
 import java.util.List;
 
+import static innopolis.config.DataBaseConfig.getPostgresqlDataSource;
+
 public class ClientRepositoryImpl implements ClientRepository {
-    
-    private final DatabaseService db = new DatabaseService();
+
+    private final JdbcTemplate jdbcTemplate = new JdbcTemplate(getPostgresqlDataSource());
     private final ClientMapper clientMapper = new ClientMapper();
 
     private static final String FIND_ALL_CLIENTS = "select * from \"tireService\".clients";
@@ -19,21 +21,21 @@ public class ClientRepositoryImpl implements ClientRepository {
 
     @Override
     public List<Client> findAllClients() {
-        return db.template.query(FIND_ALL_CLIENTS, clientMapper);
+        return jdbcTemplate.query(FIND_ALL_CLIENTS, clientMapper);
     }
 
     @Override
-    public void addNewClient(Client client) {
-        db.template.update(ADD_NEW_CLIENT, client.getFirsName(), client.getMidlName(), client.getLastName(), client.getDateOfBirth(), client.getPhoneNumber());
+    public void createClient(Client client) {
+        jdbcTemplate.update(ADD_NEW_CLIENT, client.getFirsName(), client.getMidlName(), client.getLastName(), client.getDateOfBirth(), client.getPhoneNumber());
     }
 
     @Override
     public void deleteClientById(Integer id) {
-        db.template.update(DELETE_CLIENT_BY_ID, id);
+        jdbcTemplate.update(DELETE_CLIENT_BY_ID, id);
     }
 
     @Override
     public void updateClientPhoneNumber(Integer id, Integer newPhoneNumber) {
-        db.template.update(SET_PHONE_NUMBER_CLIENT_BY_ID, newPhoneNumber, id);
+        jdbcTemplate.update(SET_PHONE_NUMBER_CLIENT_BY_ID, newPhoneNumber, id);
     }
 }
