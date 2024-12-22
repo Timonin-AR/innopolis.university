@@ -1,7 +1,7 @@
 package innopolis.mappers;
 
 
-import innopolis.entity.Car;
+
 import innopolis.entity.ClientXCar;
 import org.springframework.jdbc.core.RowMapper;
 
