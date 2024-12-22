@@ -9,6 +9,9 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Car {
-    private Integer id, clientId;
-    private String name, model, number;
+    private Integer id;
+    private Integer clientId;
+    private String name;
+    private String model;
+    private String number;
 }

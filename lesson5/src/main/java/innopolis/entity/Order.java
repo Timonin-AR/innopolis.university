@@ -9,5 +9,8 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Order {
-    private Integer id, carId, clientId, costOfWork;
+    private Integer id;
+    private Integer carId;
+    private Integer clientId;
+    private Integer costOfWork;
 }
