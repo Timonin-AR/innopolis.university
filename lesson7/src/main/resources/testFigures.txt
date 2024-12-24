@@ -1,0 +1,4 @@
+Circle=5
+Ellipse=10,15
+Rectangle=4,5
+Square=6
