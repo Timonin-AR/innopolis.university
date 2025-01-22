@@ -20,8 +20,8 @@ public class ProductRepositoryImpl implements ProductRepository {
 
     @Override
     public void create(Product product) {
-        if (product.getSum() < 0) throw new RuntimeException("Сумма заказа должна быть строго больше 0");
-        jdbcTemplate.update(INSERT_PRODUCT, product.getArticleId(), product.getCount(), product.getSum());
+        if (product.getSum() <= 0) throw new RuntimeException("Сумма заказа должна быть строго больше 0");
+        else jdbcTemplate.update(INSERT_PRODUCT, product.getArticleId(), product.getCount(), product.getSum());
     }
 
     @Override
