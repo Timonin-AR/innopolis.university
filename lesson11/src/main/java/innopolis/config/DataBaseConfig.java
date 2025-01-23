@@ -1,9 +1,10 @@
 package innopolis.config;
 
+import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
-
 import javax.sql.DataSource;
 
+@Configuration
 public class DataBaseConfig {
 
     private static final String URL = "jdbc:postgresql://localhost:5432/postgres";
@@ -16,4 +17,7 @@ public class DataBaseConfig {
         dataSource.setDriverClassName(POSTGRESQL_DRIVER);
         return dataSource;
     }
+
+
+
 }
