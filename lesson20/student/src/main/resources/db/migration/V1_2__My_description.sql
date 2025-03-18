@@ -1,0 +1,1 @@
+ALTER TABLE university.student_x_course ADD COLUMN review VARCHAR(255);
