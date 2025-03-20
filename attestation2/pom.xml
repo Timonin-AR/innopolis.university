@@ -67,7 +67,7 @@
           <archive>
             <manifest>
               <addClasspath>true</addClasspath>
-              <mainClass>innopolis.App</mainClass>
+              <mainClass>innopolis.ChatApplication</mainClass>
             </manifest>
           </archive>
         </configuration>
