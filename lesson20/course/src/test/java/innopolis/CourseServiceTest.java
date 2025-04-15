@@ -1,7 +1,6 @@
 package innopolis;
 
 import innopolis.entity.Course;
-import innopolis.repository.CourseRepository;
 import innopolis.service.CourseService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
