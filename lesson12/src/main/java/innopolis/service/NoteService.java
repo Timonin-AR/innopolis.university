@@ -1,7 +1,7 @@
 package innopolis.service;
 
 import innopolis.entity.Note;
-import innopolis.repository.NoteRepository;
+import innopolis.NoteRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 

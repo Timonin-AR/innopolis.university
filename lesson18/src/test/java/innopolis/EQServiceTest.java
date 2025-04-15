@@ -1,7 +1,6 @@
 package innopolis;
 
 import innopolis.entity.EarthQuakeEntity;
-import innopolis.repository.EarthQuakeRepository;
 import innopolis.service.EarthQuakeService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

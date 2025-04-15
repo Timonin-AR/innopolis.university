@@ -1,7 +1,7 @@
 package innopolis;
 
 import innopolis.config.DataBaseConfig;
-import innopolis.repository.impl.CarRepositoryImpl;
+import innopolis.impl.CarRepositoryImpl;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 import java.io.IOException;
