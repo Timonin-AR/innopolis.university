@@ -1,7 +1,6 @@
 package innopolis;
 
 import innopolis.entity.Note;
-import innopolis.repository.NoteRepository;
 import innopolis.service.NoteService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
