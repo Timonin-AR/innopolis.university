@@ -3,9 +3,9 @@ package innopolis;
 import innopolis.entity.Car;
 import innopolis.entity.Client;
 import innopolis.entity.Order;
-import innopolis.repository.impl.CarRepositoryImpl;
-import innopolis.repository.impl.ClientRepositoryImpl;
-import innopolis.repository.impl.OrderRepositoryImpl;
+import innopolis.impl.CarRepositoryImpl;
+import innopolis.impl.ClientRepositoryImpl;
+import innopolis.impl.OrderRepositoryImpl;
 
 import java.sql.Timestamp;
 import java.time.LocalDateTime;

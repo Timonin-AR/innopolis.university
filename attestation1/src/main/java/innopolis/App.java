@@ -1,10 +1,10 @@
 package innopolis;
 
 import innopolis.config.DataBaseConfig;
-import innopolis.repository.impl.CarRepositoryImpl;
-import innopolis.repository.impl.ClientRepositoryImpl;
-import innopolis.repository.impl.ClientXCarRepositoryImpl;
-import innopolis.repository.impl.OrderRepositoryImpl;
+import innopolis.impl.CarRepositoryImpl;
+import innopolis.impl.ClientRepositoryImpl;
+import innopolis.impl.ClientXCarRepositoryImpl;
+import innopolis.impl.OrderRepositoryImpl;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 import java.io.IOException;

@@ -1,7 +1,7 @@
 package innopolis.service;
 
 import innopolis.entity.Course;
-import innopolis.repository.CourseRepository;
+import innopolis.CourseRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

@@ -3,7 +3,7 @@ package innopolis.service;
 import innopolis.dto.EarthQuakeCreateRequest;
 import innopolis.dto.EarthQuakeResponse;
 import innopolis.entity.EarthQuakeEntity;
-import innopolis.repository.EarthQuakeRepository;
+import innopolis.EarthQuakeRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
