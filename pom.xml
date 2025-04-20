@@ -7,9 +7,6 @@
     <version>1.0-SNAPSHOT</version>
 
     <packaging>pom</packaging>
-    <modules>
-        <module>lesson21</module>
-    </modules>
 
 
 </project>
