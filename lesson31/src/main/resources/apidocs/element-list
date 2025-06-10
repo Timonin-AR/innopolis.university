@@ -1,0 +1,8 @@
+innopolis
+innopolis.config
+innopolis.controller
+innopolis.dto
+innopolis.entity
+innopolis.repository
+innopolis.security
+innopolis.service

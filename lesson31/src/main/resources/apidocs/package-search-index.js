@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"innopolis"},{"l":"innopolis.config"},{"l":"innopolis.controller"},{"l":"innopolis.dto"},{"l":"innopolis.entity"},{"l":"innopolis.repository"},{"l":"innopolis.security"},{"l":"innopolis.service"}];updateSearchResults();
